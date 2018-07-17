@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+	background: grey;
+	min-height: 70px;
+	width: 100%;
+	color: white;
+}
+
+.Header {
+	text-align: center;
+	background: lightgray;
+	min-height: 100px;
+	padding: 5px;
+}
+
+span {
+	display: inline-block;
+	padding: 26px 0;
+	width: 33.3%;
+	text-align: center;
+}
+
+.character-body {
+	padding-left: 100px; 
+	padding-right: 100px; 
+}
+
+.images {
+	width: 170px;
+	height: 170px;
+}
+
+.imageContainer {
+	display: inline-block;
+	margin: 8px 25px;
+	width: 172px;
+	height: 172px;
+	border: 1px black solid;
+}
