@@ -2,11 +2,10 @@ import React from "react";
 import '../index.css';
 
 
-const Characters = (props) => (
+const Devices = (props) => (
 
-	<div className="container character-body">
-		{/* maps through the new characterArray and renders the 12 random characters */}
-		{props.charactersArray.map((image, index) => {
+	<div className="container device-body">
+		{props.devicesArray.map((image, index) => {
 			return <div className="imageContainer" key={index} ><img className="images" src={image.image} alt={image.name}
 				onClick={(event) => { props.handleClick(image.imgId) }}
 			/></div>;
@@ -14,4 +13,4 @@ const Characters = (props) => (
 	</div>
 );
 
-export default Characters;
+export default Devices;

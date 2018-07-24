@@ -2,29 +2,29 @@ import React from "react";
 import Images from "./torture.json"
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Characters from "./components/Characters";
+import Devices from "./components/Devices";
 
 class App extends React.Component {
 
 	state = {
-		characterArray: [],
+		deviceArray: [],
 		score: 0,
 		topScore: 0,
 		clickedImages: []
 	}
-	randomCharacters = () => {
-		let characterArray = [];
-		for (let i = 0; characterArray.length < 12; i++) {
+	randomDevice = () => {
+		let deviceArray = [];
+		for (let i = 0; deviceArray.length < 12; i++) {
 			let index = Math.floor(Math.random() * Images.length);
-			if (!characterArray.includes(Images[index])) {
-				characterArray.push(Images[index]);
+			if (!deviceArray.includes(Images[index])) {
+				deviceArray.push(Images[index]);
 			}
 		}
-		return characterArray;
+		return deviceArray;
 	};
 
 	componentDidMount() {
-		this.setState({ characterArray: this.randomCharacters() })
+		this.setState({ deviceArray: this.randomDevice() })
 	}
 
 	handleUnique = (clicked) => {
@@ -32,7 +32,7 @@ class App extends React.Component {
 		this.setState({
 			score: newScore,
 			topScore: newScore > this.state.topScore ? newScore : this.state.topScore,
-			characterArray: this.randomCharacters(),
+			deviceArray: this.randomDevice(),
 			clickImages: this.state.clickedImages.push(clicked)
 		})
 	}
@@ -42,7 +42,7 @@ class App extends React.Component {
 		this.setState({
 			clickedImages: [],
 			score: 0,
-			characterArray: this.randomCharacters()
+			deviceArray: this.randomDevice()
 		})
 	}
 
@@ -62,8 +62,8 @@ class App extends React.Component {
 					topScore={this.state.topScore}
 				/>
 				<Header />
-				<Characters
-					charactersArray={this.state.characterArray}
+				<devices
+					devicesArray={this.state.deviceArray}
 					handleClick={this.handleClick}
 				/>
 			</div>
