@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Characters from "./components/Characters";
 
-// By extending the React.Component class, Character inherits functionality from it
 class App extends React.Component {
 
 	state = {
@@ -13,8 +12,6 @@ class App extends React.Component {
 		topScore: 0,
 		clickedImages: []
 	}
-
-	// function that will randomly pull out 12 pictures from the torture.json file then put into the array from above.
 	randomCharacters = () => {
 		let characterArray = [];
 		for (let i = 0; characterArray.length < 12; i++) {
