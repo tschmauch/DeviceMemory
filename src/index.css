@@ -4,6 +4,13 @@ body {
   font-family: sans-serif;
 }
 
+.navbar {
+	background: grey;
+	min-height: 70px;
+	width: 100%;
+	color: white;
+}
+
 .Header {
 	text-align: center;
 	background: lightgray;
@@ -18,14 +25,7 @@ span {
 	text-align: center;
 }
 
-.navbar {
-	background: grey;
-	min-height: 70px;
-	width: 100%;
-	color: white;
-}
-
-.device-body {
+.character-body {
 	padding-left: 100px; 
 	padding-right: 100px; 
 }
@@ -37,8 +37,8 @@ span {
 
 .imageContainer {
 	display: inline-block;
-	margin: auto;
-	width: 200px;
-	height: 200px;
-	border: 1px black;
+	margin: 8px 25px;
+	width: 172px;
+	height: 172px;
+	border: 1px black solid;
 }
