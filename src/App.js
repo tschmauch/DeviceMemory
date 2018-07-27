@@ -62,7 +62,7 @@ class App extends React.Component {
 					topScore={this.state.topScore}
 				/>
 				<Header />
-				<devices
+				<Devices
 					deviceArray={this.state.deviceArray}
 					handleClick={this.handleClick}
 				/>
