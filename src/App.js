@@ -63,7 +63,7 @@ class App extends React.Component {
 				/>
 				<Header />
 				<devices
-					devicesArray={this.state.deviceArray}
+					deviceArray={this.state.deviceArray}
 					handleClick={this.handleClick}
 				/>
 			</div>
